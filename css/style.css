@@ -3,3 +3,61 @@
   height: 1024px;
   background-color: black;
 }
+#a1 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}
+#a2 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}
+#a3 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}
+#a4 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}
+#b1 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}
+#b2 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}#b3 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}#b4 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}#c1 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}#c2 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}#c3 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}#c4 {
+  width: 256px;
+  height: 100px;
+  background-color: white;
+}
+#result {
+  color: white;
+  font-size: 20px;
+}
