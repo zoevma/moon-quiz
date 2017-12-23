@@ -4,70 +4,81 @@
     Home
   </title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/quiz.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  <!-- <script>
+  function check(checkboxElem) {
+    if (checkboxElem.checked) {
+      alert ("Rose");
+    }
+  }
+  </script> -->
 </head>
 
 <body>
-  <div id="container">
-    <h4>Select one word from each row.</h4>
+  <section class="section">
+      <div class="container">
 
-    <table>
-      <tr>
-        <td id="a1"> <input type="checkbox" name="a1" value="5">Red
-        </td>
-        <td id="a2"> <input type="checkbox" name="a2" value="3">Blue
-        </td>
-        <td id="a3"> <input type="checkbox" name="a3" value="-6">Black
-        </td>
-        <td id="a4"> <input type="checkbox" name="a4" value="9">Rainbow
-        </td>
-      </tr>
-      <tr>
-        <td id="b1"> <input type="checkbox" name="b1" value="5">Love
-        </td>
-        <td id="b2"> <input type="checkbox" name="b2" value="8">Peace
-        </td>
-        <td id="b3"> <input type="checkbox" name="b3" value="3">Calm
-        </td>
-        <td id="b4"> <input type="checkbox" name="b4" value="-2">Simple
-        </td>
-      </tr>
-      <tr>
-        <td id="c1"> <input type="checkbox" name="c1" value="5">Cake
-        </td>
-        <td id="c2"> <input type="checkbox" name="c2" value="-3">Cookies
-        </td>
-        <td id="c3"> <input type="checkbox" name="c3" value="8">Candy
-        </td>
-        <td id="c4"> <input type="checkbox" name="c4" value="3">Ice Cream
-        </td>
-      </tr>
-    </table>
+        <h2>Select one word from each row to find out which cake matches your personality.</h2>
 
 
-    <button onclick="check()">run</button>
-    <button onclick="check22()">run222</button>
-  <p id="result">
 
-  </p>
-  </div>
+
+        <table class="table is-bordered">
+          <tbody>
+            <tr>
+              <td colspan="4"><h5> Choose a color </h5></td>
+            </tr>
+          <tr>
+            <td class="grid-box"> <input id="a1" type="radio" name="color" value=5 >Red
+            </td>
+            <td class="grid-box" > <input id="a2" type="radio" name="color" value=2>Blue
+            </td>
+            <td class="grid-box"> <input id="a3" type="radio" name="color" value=-6>Black
+            </td>
+            <td class="grid-box"> <input id="a4" type="radio" name="color" value=9>Rainbow
+            </td>
+          </tr>
+          <tr>
+            <tr>
+              <td colspan="4"><h5>Choose a word</h5></td>
+            </tr>
+            <td class="grid-box"> <input  id="b1" type="radio" name="word" value=5>Love
+            </td>
+            <td class="grid-box" > <input id="b2"  type="radio" name="word" value=8>Peace
+            </td>
+            <td class="grid-box"> <input  id="b3" type="radio" name="word" value=3>Calm
+            </td>
+            <td class="grid-box" > <input id="b4" type="radio" name="word" value=-2>Simple
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4"><h5> Choose a dessert </h5></td>
+          </tr>
+        <tr>
+            <td class="grid-box" > <input  id="c1" type="radio" name="dessert" value=5>Cake
+            </td>
+            <td class="grid-box" > <input  id="c2" type="radio" name="dessert" value=-3>Cookies
+            </td>
+            <td class="grid-box" > <input  id="c3" type="radio" name="dessert" value=8>Candy
+            </td>
+            <td class="grid-box" > <input id="c4"  type="radio" name="dessert" value=3>Ice Cream
+            </td>
+          </tr>
+        </tbody>
+        </table>
+
+
+        <button onclick="check()"> Evaluate </button>
+
+          <p id="result">
+          </p>
+
+      </div>
+    </section>
 </body>
-<script>
-function check22() {
-  window.alert("clicked");
-
-  var a1 = document.getElementById("a1").checked;
-    var a3 = document.getElementById("a3").checked;
-
-    if (a1) {
-        document.getElementById("result").innerHTML = "you will get a rose as a gift";
-    } if else (a1 && a3) {
-        document.getElementById("result").innerHTML = "you will get a black rose as a gift";
-    }
-
-
-}
-</script>
 </html>
+
+<script src="js/quiz.js"></script>

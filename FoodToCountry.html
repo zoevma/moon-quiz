@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+  <title>
+    Quiz
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script>
+  function check(checkboxElem) {
+    if (checkboxElem.checked) {
+      alert ("Rose");
+    }
+  }
+  </script> -->
+</head>
+
+<body>
+  <div id="container">
+    <h4 color="white" >Select one word from each row.</h4>
+
+    <table>
+      <tr>
+        <td class="grid-box"> <input id="a1" type="radio" name="color" value="5">Red
+        </td>
+        <td class="grid-box" > <input id="a2" type="radio" name="color" value="3">Blue
+        </td>
+        <td class="grid-box"> <input id="a3" type="radio" name="color" value="-6">Black
+        </td>
+        <td class="grid-box"> <input id="a4" type="radio" name="color" value="9">Rainbow
+        </td>
+      </tr>
+      <tr>
+        <td class="grid-box"> <input  id="b1" type="radio" name="word" value="5">Love
+        </td>
+        <td class="grid-box" > <input id="b2"  type="radio" name="word" value="8">Peace
+        </td>
+        <td class="grid-box"> <input  id="b3" type="radio" name="word" value="3">Calm
+        </td>
+        <td class="grid-box" > <input id="b4" type="radio" name="word" value="-2">Simple
+        </td>
+      </tr>
+      <tr>
+        <td class="grid-box" > <input  id="c1" type="checkbox" name="c1" value="5">Cake
+        </td>
+        <td class="grid-box" > <input  id="c2" type="checkbox" name="c2" value="-3">Cookies
+        </td>
+        <td class="grid-box" > <input  id="c3" type="checkbox" name="c3" value="8">Candy
+        </td>
+        <td class="grid-box" > <input id="c4"  type="checkbox" name="c4" value="3">Ice Cream
+        </td>
+      </tr>
+    </table>
+
+
+    <button onclick="check()"> Try </button>
+
+      <p id="result">
+
+      </p>
+
+  </div>
+</body>
+</html>
+
+<script src="js/quiz.js"></script>
