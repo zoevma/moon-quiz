@@ -18,27 +18,28 @@
 </head>
 
 <body>
+
   <section class="section">
-      <div class="container">
+      <div class="container is-widescreen">
+        <audio id="bgmusic" controls autoplay>
+          <source src="watermelon.mp3" type="audio/mpeg">
+            <source src="watermelon.ogg" type="audio/ogg">
+        </audio>
+        <h1> Find out what will happen in 2018 !</h1>
 
-        <h2>Select one word from each row to find out which cake matches your personality.</h2>
-
-
-
-
-        <table class="table is-bordered">
+        <table class="table is-bordered is-fullwidth">
           <tbody>
             <tr>
               <td colspan="4"><h5> Choose a color </h5></td>
             </tr>
           <tr>
-            <td class="grid-box"> <input id="a1" type="radio" name="color" value=5 >Red
+            <td class="grid-box" style="background-color:Red;"> <input id="a1" type="radio" name="color" value=5> <h5 style="color:white;">Red</h5>
             </td>
-            <td class="grid-box" > <input id="a2" type="radio" name="color" value=2>Blue
+            <td class="grid-box" style="background-color:DodgerBlue;"> <input id="a2" type="radio" name="color" value=2><h5 style="color:white;">Blue</h5>
             </td>
-            <td class="grid-box"> <input id="a3" type="radio" name="color" value=-6>Black
+            <td class="grid-box" style="background-color:Black;"> <input id="a3" type="radio" name="color" value=-6><h5 style="color:white;">Black</h5>
             </td>
-            <td class="grid-box"> <input id="a4" type="radio" name="color" value=9>Rainbow
+            <td class="grid-box" style="background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); "> <input id="a4" type="radio" name="color" value=9><h5 style="color:white;">Rainbow</h5>
             </td>
           </tr>
           <tr>
@@ -69,12 +70,11 @@
           </tr>
         </tbody>
         </table>
-
+        <p id="results"> My results: </p>
 
         <button onclick="check()"> Evaluate </button>
 
-          <p id="result">
-          </p>
+
 
       </div>
     </section>
