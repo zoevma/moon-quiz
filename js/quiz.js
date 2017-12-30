@@ -27,12 +27,14 @@ function check() {
           result = result + Number(element.value);
         }
     });
+    // [0,1,2,...]
+    var foodNames = ["lazania","sandwich","pasta","m&ms","cheese"];
 
   console.log(result);
     if (result > 19) {
     output = "You will slowly become a hipster" ;
     } else if (result > 10) {
-      output = "You will eat lots of your favorite food";
+      output = "You will eat lots of your favorite food :" + foodNames[result-11];
     } else if (result > 0) {
       output = "You will get a pet";
     } else {

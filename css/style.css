@@ -1,13 +1,22 @@
-#container {
-  background-color: white ;
+.grid-box {
+    width: 100px;
+    height: 100px;
+    color: black;
+    font-size: 20px;
 }
-.grid-box{
-  width: 100px;
-  height: 100px;
-  color: black;
-  font-size: 20px;
+
+#b1 {
+    background-image: url("../img/love.jpg");
 }
-#result {
-  color: white;
-  font-size: 20px;
+
+#b2 {
+    background-image: url("../img/love.jpg");
+}
+
+#b3 {
+    background-image: url("../img/love.jpg");
+}
+
+#b4 {
+    background-image: url("../img/love.jpg");
 }
