@@ -4,62 +4,71 @@
     Quiz
   </title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <script>
-  function check(checkboxElem) {
-    if (checkboxElem.checked) {
-      alert ("Rose");
-    }
-  }
-  </script> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+
 </head>
 
 <body>
-  <div id="container">
-    <h4 color="white">Select one word from each row.</h4>
 
-    <table>
-      <tr>
-        <td class="grid-box"> <input id="a1" type="radio" name="color" value="5">Red
-        </td>
-        <td class="grid-box" > <input id="a2" type="radio" name="color" value="3">Blue
-        </td>
-        <td class="grid-box"> <input id="a3" type="radio" name="color" value="-6">Black
-        </td>
-        <td class="grid-box"> <input id="a4" type="radio" name="color" value="9">Rainbow
-        </td>
-      </tr>
-      <tr>
-        <td class="grid-box"> <input  id="b1" type="radio" name="word" value="5">Love
-        </td>
-        <td class="grid-box" > <input id="b2"  type="radio" name="word" value="8">Peace
-        </td>
-        <td class="grid-box"> <input  id="b3" type="radio" name="word" value="3">Calm
-        </td>
-        <td class="grid-box" > <input id="b4" type="radio" name="word" value="-2">Simple
-        </td>
-      </tr>
-      <tr>
-        <td class="grid-box" > <input  id="c1" type="checkbox" name="c1" value="5">Cake
-        </td>
-        <td class="grid-box" > <input  id="c2" type="checkbox" name="c2" value="-3">Cookies
-        </td>
-        <td class="grid-box" > <input  id="c3" type="checkbox" name="c3" value="8">Candy
-        </td>
-        <td class="grid-box" > <input id="c4"  type="checkbox" name="c4" value="3">Ice Cream
-        </td>
-      </tr>
-    </table>
+  <section class="section">
+      <div class="container is-widescreen">
+
+        <h1> Which country should you move to? </h1>
+Answer some food questions and find out which country you should move to
+        <table class="table is-bordered is-fullwidth">
+          <tbody>
+            <tr>
+              <td colspan="4"><h5> Choose a color </h5></td>
+            </tr>
+          <tr>
+            <td class="grid-box" style="background-color:Red;"> <input id="a1" type="radio" name="color" value=5> <h5 style="color:white;">Red</h5>
+            </td>
+            <td class="grid-box" style="background-color:DodgerBlue;"> <input id="a2" type="radio" name="color" value=2><h5 style="color:white;">Blue</h5>
+            </td>
+            <td class="grid-box" style="background-color:Black;"> <input id="a3" type="radio" name="color" value=-6><h5 style="color:white;">Black</h5>
+            </td>
+            <td class="grid-box" style="background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); "> <input id="a4" type="radio" name="color" value=9><h5 style="color:white;">Rainbow</h5>
+            </td>
+          </tr>
+          <tr>
+            <tr>
+              <td colspan="4"><h5>Choose a word</h5></td>
+            </tr>
+            <td class="grid-box"> <input  id="b1" type="radio" name="word" value=5>Love
+            </td>
+            <td class="grid-box" > <input id="b2"  type="radio" name="word" value=8>Peace
+            </td>
+            <td class="grid-box"> <input  id="b3" type="radio" name="word" value=3>Calm
+            </td>
+            <td class="grid-box" > <input id="b4" type="radio" name="word" value=-2>Simple
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4"><h5> Choose a dessert </h5></td>
+          </tr>
+        <tr>
+            <td class="grid-box" > <input  id="c1" type="radio" name="dessert" value=5>Cake
+            </td>
+            <td class="grid-box" > <input  id="c2" type="radio" name="dessert" value=-3>Cookies
+            </td>
+            <td class="grid-box" > <input  id="c3" type="radio" name="dessert" value=8>Candy
+            </td>
+            <td class="grid-box" > <input id="c4"  type="radio" name="dessert" value=3>Ice Cream
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        <p id="results"> My results: </p>
+
+        <button class="button is-large is-fullwidth is-success" onclick="check()"> Evaluate </button>
 
 
-    <button onclick="check()"> Try </button>
 
-      <p id="result">
-
-      </p>
-
-  </div>
+      </div>
+    </section>
 </body>
 </html>
 

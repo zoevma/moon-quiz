@@ -8,24 +8,14 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
-  <!-- <script>
-  function check(checkboxElem) {
-    if (checkboxElem.checked) {
-      alert ("Rose");
-    }
-  }
-  </script> -->
+
 </head>
 
 <body>
 
   <section class="section">
       <div class="container is-widescreen">
-        <audio  id="bgmusic" controls autoplay>
-          <source src="audio/watermelon.mp3" type="audio/mpeg">
-            <source src="audio/watermelon.ogg" type="audio/ogg">
-        </audio>
-    </br>
+
         <h1> Find out what will happen in 2018 !</h1>
 
         <table class="table is-bordered is-fullwidth">
@@ -34,9 +24,9 @@
               <td colspan="4"><h5> Choose a color </h5></td>
             </tr>
           <tr>
-            <td class="grid-box has-text-centered" style="background-color:Red;"> <input id="a1" type="radio" name="color" value=5> <h5 style="color:white;">Red</h5>
+            <td class="grid-box" style="background-color:Red;"> <input id="a1" type="radio" name="color" value=5> <h5 style="color:white;">Red</h5>
             </td>
-            <td class="grid-box has-text-centered" style="background-color:DodgerBlue;"> <input id="a2" type="radio" name="color" value=2><h5 style="color:white;">Blue</h5>
+            <td class="grid-box" style="background-color:DodgerBlue;"> <input id="a2" type="radio" name="color" value=2><h5 style="color:white;">Blue</h5>
             </td>
             <td class="grid-box" style="background-color:Black;"> <input id="a3" type="radio" name="color" value=-6><h5 style="color:white;">Black</h5>
             </td>
@@ -75,7 +65,10 @@
 
         <button class="button is-large is-fullwidth is-success" onclick="check()"> Evaluate </button>
 
-
+        <audio  id="bgmusic" controls autoplay>
+          <source src="audio/watermelon.mp3" type="audio/mpeg">
+            <source src="audio/watermelon.ogg" type="audio/ogg">
+        </audio>
 
       </div>
     </section>
