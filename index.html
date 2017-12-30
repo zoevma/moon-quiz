@@ -16,7 +16,8 @@
   <section class="section">
       <div class="container is-widescreen">
 
-        <h1> Find out what will happen in 2018 !</h1>
+        <h1> </h1>
+        <p class="title is-4 has-text-centered">Find out what will happen in 2018 !</p>
 
         <table class="table is-bordered is-fullwidth">
           <tbody>
@@ -37,13 +38,13 @@
             <tr>
               <td colspan="4"><h5>Choose a word</h5></td>
             </tr>
-            <td class="grid-box"> <input  id="b1" type="radio" name="word" value=5>Love
+            <td id="b1"  class="grid-box"> <input  type="radio" name="word" value=5>Love
             </td>
-            <td class="grid-box" > <input id="b2"  type="radio" name="word" value=8>Peace
+            <td  id="b2" class="grid-box" > <input  type="radio" name="word" value=8>Peace
             </td>
-            <td class="grid-box"> <input  id="b3" type="radio" name="word" value=3>Calm
+            <td id="b3" class="grid-box"> <input   type="radio" name="word" value=3>Calm
             </td>
-            <td class="grid-box" > <input id="b4" type="radio" name="word" value=-2>Simple
+            <td id="b4" class="grid-box" > <input  type="radio" name="word" value=-2>Simple
             </td>
           </tr>
           <tr>
@@ -61,14 +62,19 @@
           </tr>
         </tbody>
         </table>
-        <p id="results"> My results: </p>
+        <p  class="title is-4" >My results : &nbsp;<span id="results"></span> </p>
 
         <button class="button is-large is-fullwidth is-success" onclick="check()"> Evaluate </button>
 
-        <audio  id="bgmusic" controls autoplay>
-          <source src="audio/watermelon.mp3" type="audio/mpeg">
-            <source src="audio/watermelon.ogg" type="audio/ogg">
-        </audio>
+        <br />
+        <div>
+            <br />
+            <audio  id="bgmusic" controls autoplay>
+              <source src="audio/watermelon.mp3" type="audio/mpeg">
+                <source src="audio/watermelon.ogg" type="audio/ogg">
+            </audio>
+        </div>
+
 
       </div>
     </section>

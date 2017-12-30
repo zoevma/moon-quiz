@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .grid-box{
   width: 100px;
   height: 100px;
@@ -6,4 +7,27 @@
 }
 #b3 {
   background-image: url("../images/calm.jpg");
+=======
+.grid-box {
+    width: 100px;
+    height: 100px;
+    color: black;
+    font-size: 20px;
+}
+
+#b1 {
+    background-image: url("../img/love.jpg");
+}
+
+#b2 {
+    background-image: url("../img/love.jpg");
+>>>>>>> 40fb416c6d4acd1590397b5e49a7932647320b97
+}
+
+#b3 {
+    background-image: url("../img/love.jpg");
+}
+
+#b4 {
+    background-image: url("../img/love.jpg");
 }
