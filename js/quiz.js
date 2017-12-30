@@ -28,17 +28,18 @@ function check() {
         }
     });
     // [0,1,2,...]
-    var foodNames = ["lazania","sandwich","pasta","m&ms","cheese"];
-
+    var foodNames = ["lazania","eggs","sushi","grapes","cheese","fish", "rice","pizza", "chilli"];
+    var petNames = ["turtle", "dragon", "a rock", "rabbit", "monkey", "cat", "mouse", "guinea pig","pig","butterfly"]
+    var destinations = ["New Zealand", "Peru","Jamaica", "Mexico", "Japan", "Australia", "Russia", "Papua New Guinea", "Spain", "South Africa", "Canada"]
   console.log(result);
     if (result > 19) {
-    output = "You will slowly become a hipster" ;
+    output = "You will slowly become a hipster";
     } else if (result > 10) {
-      output = "You will eat lots of your favorite food :" + foodNames[result-11];
+      output = "You will eat lots of your favorite food : " + foodNames[result-11];
     } else if (result > 0) {
-      output = "You will get a pet";
+      output = "You will get a pet: " + petNames[result-1];
     } else {
-      output = "You will visit your dream destination";
+      output = "You will visit your dream destination" + [result+11];
     }
 document.getElementById("results").innerHTML = output;
 

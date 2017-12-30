@@ -1,33 +1,36 @@
-<<<<<<< HEAD
-.grid-box{
-  width: 100px;
-  height: 100px;
-  color: black;
-  font-size: 20px;
-}
-#b3 {
-  background-image: url("../images/calm.jpg");
-=======
 .grid-box {
-    width: 100px;
-    height: 100px;
+    width: 100px !important;
+    height: 100px !important;
     color: black;
     font-size: 20px;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
 }
 
 #b1 {
-    background-image: url("../img/love.jpg");
+    background-image: url("../images/love.jpg");
 }
 
 #b2 {
-    background-image: url("../img/love.jpg");
->>>>>>> 40fb416c6d4acd1590397b5e49a7932647320b97
+    background-image: url("../images/peace.jpg");
 }
 
 #b3 {
-    background-image: url("../img/love.jpg");
+    background-image: url("../images/calm.jpg");
 }
 
 #b4 {
-    background-image: url("../img/love.jpg");
+    background-image: url("../images/simple.png");
+}
+#c1 {
+    background-image: url("../images/cake.jpg");
+}
+#c2 {
+    background-image: url("../images/cookies.jpg");
+}
+#c3 {
+    background-image: url("../images/candy.jpg");
+}
+#c4 {
+    background-image: url("../images/icecream.jpg");
 }
