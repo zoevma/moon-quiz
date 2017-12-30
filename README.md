@@ -1,7 +1,6 @@
 # moon-quiz
 quiz machine
 
-#Authors
+# Authors
 
-Zoe
-Majed
+Zoe and Majed
