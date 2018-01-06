@@ -31,9 +31,11 @@ function check() {
     var foodNames = ["lazania","eggs","sushi","grapes","cheese","fish", "rice","pizza", "chilli"];
     var petNames = ["turtle", "dragon", "a rock", "rabbit", "monkey", "cat", "mouse", "guinea pig","pig","butterfly"]
     var destinations = ["New Zealand", "Peru","Jamaica", "Mexico", "Japan", "Australia", "Russia", "Papua New Guinea", "Spain", "South Africa", "Canada"]
+    var musics =
   console.log(result);
     if (result > 19) {
     output = "You will slowly become a hipster";
+        playMusic();
     } else if (result > 10) {
       output = "You will eat lots of your favorite food : " + foodNames[result-11];
     } else if (result > 0) {
@@ -41,6 +43,12 @@ function check() {
     } else {
       output = "You will visit your dream destination" + [result+11];
     }
+
 document.getElementById("results").innerHTML = output;
 
+}
+
+function playMusic(fileName){
+    var audio = new Audio('/audio/' + fileName);
+    audio.play();
 }
