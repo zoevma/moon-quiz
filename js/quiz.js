@@ -55,7 +55,7 @@ function check() {
       sound_pleyer.init(100,false);
       sound_pleyer.start();
 
-document.getElementById("results").innerHTML = output;
+document.getElementById("myresults").innerHTML = output;
 
 }
 
