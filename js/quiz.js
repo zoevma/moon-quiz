@@ -49,7 +49,7 @@ function check() {
       output = "You will get a pet: " + petNames[result-1];
       var file_path = AUDIO_PATH+musics[result-1]+AUDIO_EXT;
     } else {
-      output = "You will visit your dream destination" + [result+11];
+      output = "You will visit your dream destination" + destinations[result+11];
     }
       var sound_pleyer = new Sound(file_path,100,true);
       sound_pleyer.init(100,false);
@@ -57,6 +57,80 @@ function check() {
 
 document.getElementById("results").innerHTML = output;
 
+}
+
+// trying a method of evaluation with arrays
+
+function giveres() {
+  var x = [];
+  var output;
+  var one = document.getElementsByName("zmorge");
+  var two = document.getElementsByName("lunch");
+  var three = document.getElementsByName("drink");
+  var four = document.getElementsByName("dinner");
+  var five = document.getElementsByName("sweet");
+
+  one.forEach(function(element){
+    if (element.checked){
+      x.push(element.value);
+    }
+  });
+
+  two.forEach(function(element){
+    if (element.checked){
+      x.push(element.value);
+    }
+  });
+
+  three.forEach(function(element){
+    if (element.checked){
+      x.push(element.value);
+    }
+    });
+
+  four.forEach(function(element){
+    if (element.checked){
+      x.push(element.value);
+    }
+  });
+
+  five.forEach(function(element){
+    if (element.checked){
+      x.push(element.value);
+    }
+  });
+
+  console.log(x);
+
+  x.forEach(function(element) {
+    console.log(element)
+  });
+// function gb(element){
+//   return element == 1;
+// }
+//   console.log(x.filter(gb));
+//
+// function europe(element){
+//   return element == 2;
+// }
+//   x.filter(europe);
+//
+// function asia(element){
+//     return element == 3;
+// }
+//   x.filter(asia);
+//
+// function merica(element){
+//   return element == 4;
+// }
+//   x.filter(merica);
+
+var finallyasd = function(checkfilter){
+    if (x.filter(gb) > x.filter(europe) || x.filter(asia) ||x.filter(merica))
+    return "Great Britain";
+    else if (x.filter(europe) > x.filter(gb) || x.filter(asia) || x.filter(merica))
+    return "Europe";
+  };
 }
 
 function Sound(source,volume,loop)
@@ -93,4 +167,4 @@ function Sound(source,volume,loop)
         this.volume=volume;
         this.loop=loop;
     }
-}
+  }
