@@ -86,30 +86,35 @@ function giveres() {
     }
   });
 
-function gb(element){
-  return element == 1;
-}
-  console.log(x.filter(gb));
+  console.log(x);
 
-function europe(element){
-  return element == 2;
-}
-  x.filter(europe);
+  x.forEach(function(element) {
+    console.log(element)
+  });
+// function gb(element){
+//   return element == 1;
+// }
+//   console.log(x.filter(gb));
+//
+// function europe(element){
+//   return element == 2;
+// }
+//   x.filter(europe);
+//
+// function asia(element){
+//     return element == 3;
+// }
+//   x.filter(asia);
+//
+// function merica(element){
+//   return element == 4;
+// }
+//   x.filter(merica);
 
-function asia(element){
-    return element == 3;
-}
-  x.filter(asia);
-
-function merica(element){
-  return element == 4;
-}
-  x.filter(merica);
-
-function finally(checkfilter){
-  if (x.filter(gb) > x.filter(europe) || x.filter(asia) ||x.filter(merica))
-  output = "Great Britain";
-  else if (x.filter(europe) > x.filter(gb) || x.filter(asia) || x.filter(merica))
-  output = "Europe"
-}
+var finallyasd = function(checkfilter){
+    if (x.filter(gb) > x.filter(europe) || x.filter(asia) ||x.filter(merica))
+    return "Great Britain";
+    else if (x.filter(europe) > x.filter(gb) || x.filter(asia) || x.filter(merica))
+    return "Europe";
+  };
 }
