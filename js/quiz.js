@@ -39,8 +39,77 @@ function check() {
     } else if (result > 0) {
       output = "You will get a pet: " + petNames[result-1];
     } else {
-      output = "You will visit your dream destination" + [result+11];
+      output = "You will visit your dream destination" + destinations[result+11];
     }
 document.getElementById("results").innerHTML = output;
 
+}
+
+// trying a method of evaluation with arrays
+
+function giveres() {
+  var x = [];
+  var output;
+  var one = document.getElementsByName("zmorge");
+  var two = document.getElementsByName("lunch");
+  var three = document.getElementsByName("drink");
+  var four = document.getElementsByName("dinner");
+  var five = document.getElementsByName("sweet");
+
+  one.forEach(function(element){
+    if (element.checked){
+      x.push(element.value);
+    }
+  });
+
+  two.forEach(function(element){
+    if (element.checked){
+      x.push(element.value);
+    }
+  });
+
+  three.forEach(function(element){
+    if (element.checked){
+      x.push(element.value);
+    }
+    });
+
+  four.forEach(function(element){
+    if (element.checked){
+      x.push(element.value);
+    }
+  });
+
+  five.forEach(function(element){
+    if (element.checked){
+      x.push(element.value);
+    }
+  });
+
+function gb(element){
+  return element == 1;
+}
+  console.log(x.filter(gb));
+
+function europe(element){
+  return element == 2;
+}
+  x.filter(europe);
+
+function asia(element){
+    return element == 3;
+}
+  x.filter(asia);
+
+function merica(element){
+  return element == 4;
+}
+  x.filter(merica);
+
+function finally(checkfilter){
+  if (x.filter(gb) > x.filter(europe) || x.filter(asia) ||x.filter(merica))
+  output = "Great Britain";
+  else if (x.filter(europe) > x.filter(gb) || x.filter(asia) || x.filter(merica))
+  output = "Europe"
+}
 }
