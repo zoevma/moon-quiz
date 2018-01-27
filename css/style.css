@@ -34,3 +34,7 @@
 #c4 {
     background-image: url("../images/icecream.jpg");
 }
+body {
+  background-color:"powderblue";
+  font-family:"fantasy";
+}

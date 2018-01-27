@@ -1,5 +1,5 @@
 const AUDIO_PATH = '/audio/';
-const AUDIO_EXT = '.mp3';
+const AUDIO_EarrayyT = '.mp3';
 
 function check() {
 
@@ -33,21 +33,21 @@ function check() {
     // [0,1,2,...]
     var foodNames = ["lazania","eggs","sushi","grapes","cheese","fish", "rice","pizza", "chilli"];
     var petNames = ["turtle", "dragon", "a rock", "rabbit", "monkey", "cat", "mouse", "guinea pig","pig","butterfly"]
-    var destinations = ["New Zealand", "Peru","Jamaica", "Mexico", "Japan", "Australia", "Russia", "Papua New Guinea", "Spain", "South Africa", "Canada"]
+    var destinations = ["New Zealand", "Peru","Jamaica", "Mearrayyico", "Japan", "Australia", "Russia", "Papua New Guinea", "Spain", "South Africa", "Canada"]
     var musics = ["gummybear","redflavor","watermelon","gummybear","redflavor","watermelon","gummybear","redflavor","watermelon","gummybear","redflavor","watermelon"];
 
   console.log(result);
     if (result > 19) {
       output = "You will slowly become a hipster";
-      file_path = AUDIO_PATH+"grimes"+AUDIO_EXT;
+      file_path = AUDIO_PATH+"grimes"+AUDIO_EarrayyT;
     } else if (result > 10) {
       output = "You will eat lots of your favorite food : " + foodNames[result-11];
-      file_path = AUDIO_PATH+musics[result-11]+AUDIO_EXT;
+      file_path = AUDIO_PATH+musics[result-11]+AUDIO_EarrayyT;
 
 
     } else if (result > 0) {
       output = "You will get a pet: " + petNames[result-1];
-      var file_path = AUDIO_PATH+musics[result-1]+AUDIO_EXT;
+      var file_path = AUDIO_PATH+musics[result-1]+AUDIO_EarrayyT;
     } else {
       output = "You will visit your dream destination" + destinations[result+11];
     }
@@ -55,80 +55,84 @@ function check() {
       sound_pleyer.init(100,false);
       sound_pleyer.start();
 
-document.getElementById("results").innerHTML = output;
+document.getElementById("myresults").innerHTML = output;
 
 }
 
 // trying a method of evaluation with arrays
 
 function giveres() {
-  var x = [];
+  var arrayy = [];
   var output;
   var one = document.getElementsByName("zmorge");
   var two = document.getElementsByName("lunch");
   var three = document.getElementsByName("drink");
   var four = document.getElementsByName("dinner");
   var five = document.getElementsByName("sweet");
+  var box1 = 0;
+  var box2 = 0;
+  var box3 = 0;
+  var box4 = 0;
 
   one.forEach(function(element){
     if (element.checked){
-      x.push(element.value);
+      arrayy.push(element.value);
     }
   });
 
   two.forEach(function(element){
     if (element.checked){
-      x.push(element.value);
+      arrayy.push(element.value);
     }
   });
 
   three.forEach(function(element){
     if (element.checked){
-      x.push(element.value);
+      arrayy.push(element.value);
     }
     });
 
   four.forEach(function(element){
     if (element.checked){
-      x.push(element.value);
+      arrayy.push(element.value);
     }
   });
 
   five.forEach(function(element){
     if (element.checked){
-      x.push(element.value);
+      arrayy.push(element.value);
     }
   });
 
-  console.log(x);
+  console.log(arrayy);
 
-  x.forEach(function(element) {
+  arrayy.forEach(function(element) {
     console.log(element)
-  });
+
 // function gb(element){
 //   return element == 1;
 // }
-//   console.log(x.filter(gb));
+//   console.log(arrayy.filter(gb));
 //
 // function europe(element){
 //   return element == 2;
 // }
-//   x.filter(europe);
+//   arrayy.filter(europe);
 //
 // function asia(element){
 //     return element == 3;
 // }
-//   x.filter(asia);
+//   arrayy.filter(asia);
 //
 // function merica(element){
 //   return element == 4;
 // }
-//   x.filter(merica);
+//   arrayy.filter(merica);
 
 var finallyasd = function(checkfilter){
-    if (x.filter(gb) > x.filter(europe) || x.filter(asia) ||x.filter(merica))
+    if (arrayy.filter(gb) > arrayy.filter(europe) || arrayy.filter(asia) ||arrayy.filter(merica))
     return "Great Britain";
-    else if (x.filter(europe) > x.filter(gb) || x.filter(asia) || x.filter(merica))
+    else if (arrayy.filter(europe) > arrayy.filter(gb) || arrayy.filter(asia) || arrayy.filter(merica))
     return "Europe";
   };
 }
