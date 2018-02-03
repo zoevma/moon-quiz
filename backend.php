@@ -1,6 +1,6 @@
 <?php
-$name = $_GET['name'];
-$password = $_GET['password'];
+$name = $_POST['name'];
+$password = $_POST['password'];
 $path = '/images/';
 if ($name == 'mark' && $password == 'kim') {
 $path = $path . 'cookies.jpg';
